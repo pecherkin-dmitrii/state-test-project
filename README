@@ -1,5 +1,3 @@
-A Flink application project using Scala and SBT.
+A Flink test job for testing state.
 
-To run and test your application use SBT invoke: 'sbt run'
-
-In order to run your application from within IntelliJ, you have to select the classpath of the 'mainRunner' module in the run/debug configurations. Simply open 'Run -> Edit configurations...' and then select 'mainRunner' from the Use classpath of module dropbox.
+Before submiting the job into flink, run in console "nc -lk 9999" to open socket and send text strings into job.
