@@ -18,6 +18,7 @@ object Job {
 
     val stateBackend = new RocksDBStateBackend("file:///home/flink-data/stateTestProject/")
     env.setParallelism(1)
+    env.setMaxParallelism(8)
     env.setStateBackend(stateBackend.asInstanceOf[StateBackend])
     env.setRestartStrategy(RestartStrategies.noRestart())
 
